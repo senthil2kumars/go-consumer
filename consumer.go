@@ -19,10 +19,10 @@ func failOnError(err error, message string) {
 
 func main (){
 //Set custom env variable
-	var username = os.Getenv("USERNAME")
-	var password = os.Getenv("PASSWORD")
-	var host = os.Getenv("HOST")
-	var port = os.Getenv("PORT")
+	var username = os.Getenv("username")
+	var password = os.Getenv("password")
+	var host = os.Getenv("host")
+	var port = os.Getenv("port")
 
 	// Create client
 	client, err := amqp.Dial("amqps://"+host+":"+port,
